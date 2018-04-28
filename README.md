@@ -4,6 +4,7 @@
 
 ## Hammerspoon
 * [using CapsLock to switch between two screens](Hammerspoon/init.lua)
+
 在双屏之间用`CapsLock`切换鼠标（光标位置），需要先用[Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements)把`CapsLock`定义为`F19`
 
 ## 其他
