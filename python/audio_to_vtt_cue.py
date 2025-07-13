@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*- #
 # https://mp.weixin.qq.com/s/KDmR43GDPog-nhrNL1cHZQ
 
-import whisper
 import os
 import sys
 import re
@@ -17,6 +16,7 @@ if not os.path.exists(vtt) or input("vtt已存在，覆盖(y/[n])?").startswith(
     print("请稍候...")
 
     # 如果GPU够好，用 large-v3-turbo 效果更好
+    import whisper
     model = whisper.load_model("base.en" if eng else "base")
     result = model.transcribe(
         mp3,
